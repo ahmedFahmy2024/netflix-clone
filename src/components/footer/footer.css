@@ -1,0 +1,40 @@
+.footer {
+    padding: 30px 4%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.footer-icons {
+    display: flex;
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.footer ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.copyright {
+    font-size: 14px;
+    text-align: center;
+    color: gray;
+}
+
+@media (max-width: 500px) {
+    .footer-icons {
+        gap: 10px;
+        margin: 20px 0;
+    }
+    .footer ul {
+        gap: 10px;
+        grid-template-columns: 1fr 1fr;
+        font-size: 12px;
+    }
+    .copyright {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,117 @@
+.navbar {
+    width: 100%;
+    padding: 20px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    font-size: 14px;
+    color: #e5e5e5;
+    background-image: linear-gradient(180deg, rgba(0,0,0,0.7) 10%, transparent);
+    z-index: 1;
+}
+.navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.navbar-logo {
+    width: 100%;
+    max-width: 200px;
+    cursor: pointer;
+}
+.navbar-left ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+.navbar-left ul li {
+    cursor: pointer;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.navbar-right button {
+    background: rgb(229, 9, 20);
+    color: rgb(255, 255, 255);
+    font-size: 0.875rem;
+    font-weight: 500;
+    min-height: 2rem;
+    padding: 0.25rem 1rem;
+    border-radius: 0.25rem;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-dark {
+    background-image: linear-gradient(180deg, transparent 10%, rgba(0,0,0,0.7));
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 2%;
+    }
+    .navbar-logo {
+        max-width: 100px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .navbar-left,
+    .navbar-right {
+        display: none !important;
+    }
+    .navbar-mobile {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .drawer {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+        background-color: rgba(0, 0, 0, 0.9) !important;
+    }
+
+    .drawer ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+
+    .drawer ul li {
+        cursor: pointer;
+    }
+
+    .drawer .navbar-profile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .drawer .navbar-profile button {
+        background: rgb(229, 9, 20);
+        color: rgb(255, 255, 255);
+        font-size: 0.875rem;
+        font-weight: 500;
+        min-height: 2rem;
+        padding: 0.25rem 1rem;
+        border-radius: 0.25rem;
+        border: none;
+        cursor: pointer;
+    }
+}
+
